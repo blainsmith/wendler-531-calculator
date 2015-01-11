@@ -1,0 +1,183 @@
+@import '//fonts.googleapis.com/css?family=Dosis';
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font: normal 100%/1.5 Dosis, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+a, a:visited, a:hover {
+  color: #333;
+}
+header {
+  text-align: center;
+  background: #ed702b;
+  color: #fff;
+}
+  header h1 {
+    margin: 0;
+    padding: 5px;
+    font-size: 75%;
+  }
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+fieldset label {
+  display: block;
+  float: right;
+  width: 49%;
+  font-size: 120%;
+  line-height: 3;
+  color: #fff;
+}
+fieldset input {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+  font: inherit;
+  font-size: 200%;
+  line-height: 1.8;
+  text-align: right;
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+fieldset input:focus {
+  outline: 0;
+  border: none;
+}
+  #weight {
+    background: #333 url(weight.png) no-repeat 10px 50%;
+    background-size: 40px;
+  }
+#results {
+  
+}
+  #results table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #results thead {
+    color: #333;
+    background-color: #eee;
+    border-bottom: 5px solid #ddd;
+  }
+    #results th {
+      margin-bottom: 10px;
+      padding: 15px 0;
+    }
+    #results td {
+      padding-top: 10px;
+    }
+  #results tr,
+  #results td {
+    width: 25%;
+    text-align: center;
+  }
+  #results .weight {
+    font-size: 115%;
+    font-weight: bold;
+    line-height: 1;
+  }
+  #results label {
+    display: block;
+  }
+footer {
+  clear: both;
+  text-align: center;
+}
+
+@media only screen 
+and (max-width : 320px) {
+  fieldset label {
+    width: 20%;
+  }
+  fieldset input {
+    width: 79%;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-device-width : 321px) {
+  #maxes {
+    margin: 0 auto;]
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  body {
+    font-size: 150%;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  body {
+    font-size: 200%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  body {
+    font-size: 150%;
+    background: #000;
+  }
+  #app {
+    margin: 0 auto;
+    width: 640px;
+    height: 100%;
+    background-color: #fff;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

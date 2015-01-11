@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RM Calc</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Wendler 5/3/1 Calculator</h1>
+      </header>
+      
+      <form>
+        <fieldset id="weight">
+          <input type="tel" onfocus="this.value = '';" data-bind="value: weight" />
+          <label>lbs/kg</label>
+        </fieldset>
+      </form>
+      
+      <div id="results">
+        <table>
+          <thead>
+            <tr>
+              <th>Week 1</th>
+              <th>Week 2</th>
+              <th>Week 3</th>
+              <th>Week 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label>5 reps</label>
+                <span><span class="weight" data-bind="text: results.week1.set1"></span>
+                <label>65%</label>
+              </td>
+              <td>
+                <label>3 reps</label>
+                <span class="weight" data-bind="text: results.week2.set1"></span>
+                <label>70%</label>
+              </td>
+              <td>
+                <label>5 reps</label>
+                <span class="weight" data-bind="text: results.week3.set1"></span>
+                <label>75%</label>
+              </td>
+              <td>
+                <label>5 reps</label>
+                <span class="weight" data-bind="text: results.week4.set1"></span>
+                <label>40%</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>5 reps</label>
+                <span class="weight" data-bind="text: results.week1.set2"></span>
+                <label>75%</label>
+              </td>
+              <td>
+                <label>3 reps</label>
+                <span class="weight" data-bind="text: results.week2.set2"></span>
+                <label>80%</label>
+              </td>
+              <td>
+                <label>3 reps</label>
+                <span class="weight" data-bind="text: results.week3.set2"></span>
+                <label>85%</label>
+              </td>
+              <td>
+                <label>5 reps</label>
+                <span class="weight" data-bind="text: results.week4.set2"></span>
+                <label>50%</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>5+ reps</label>
+                <span class="weight" data-bind="text: results.week1.set3"></span>
+                <label>85%</label>
+              </td>
+              <td>
+                <label>3+ reps</label>
+                <span class="weight" data-bind="text: results.week2.set3"></span>
+                <label>90%</label>
+              </td>
+              <td>
+                <label>1+ reps</label>
+                <span class="weight" data-bind="text: results.week3.set3"></span>
+                <label>95%</label>
+              </td>
+              <td>
+                <label>5 reps</label>
+                <span class="weight" data-bind="text: results.week4.set3"></span>
+                <label>60%</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>1-5 reps</label>
+                <span class="weight"><span data-bind="text: results.week1.set4low"></span>-<span data-bind="text: results.week1.set4high"></span></span>
+                <label>90-95%</label>
+              </td>
+              <td>
+                <label>1-3 reps</label>
+                <span class="weight"><span data-bind="text: results.week2.set4low"></span>-<span data-bind="text: results.week2.set4high"></span></span>
+                <label>95-100%</label>
+              </td>
+              <td>
+                <label>1 rep</label>
+                <span class="weight"><span data-bind="text: results.week3.set4low"></span>-<span data-bind="text: results.week3.set4high"></span></span>
+                <label>100-105%</label>
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <footer>
+        <p>
+          Made by <a href="http://blainsmith.com">Blain Smith</a>
+        </p>
+        <p>
+          <a href="https://github.com/blainsmith/wendler-531-calculator">GitHub Project</a> &middot;
+          <a href="http://www.jimwendler.com/">Wendler 5/3/1</a>
+        </p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+  </body>
+</html>

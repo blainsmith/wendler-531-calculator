@@ -9,7 +9,7 @@ Setup dev/ftp tools.
 
 ```
 > npm install
-> npm setup
+> npm run setup
 ```
 
 ## Development
@@ -25,5 +25,5 @@ Start a local static server.
 FTP to anywhere.
 
 ```
-> npm deploy
+> npm run deploy
 ```

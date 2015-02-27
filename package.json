@@ -1,0 +1,25 @@
+{
+  "name": "wendler-531-calculator",
+  "version": "1.0.0",
+  "description": "Knockout.js app to calculate percentages for the Wendler 5/3/1 training program.",
+  "scripts": {
+    "setup": "dploy install",
+    "start": "ssss 3000",
+    "deploy": "dploy live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blainsmith/wendler-531-calculator.git"
+  },
+  "author": "Blain Smith <rebelgeek@blainsmith.com> (http://blainsmith.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blainsmith/wendler-531-calculator/issues"
+  },
+  "homepage": "https://rblgk.io/wendler-531-calculator",
+  "devDependencies": {
+    "dploy": "^1.2.0",
+    "ssss": "^0.1.2"
+  }
+}
